@@ -18,6 +18,7 @@
     "ci:lint:commits": "commitlint --from=${CIRCLE_BRANCH} --to=${CIRCLE_SHA1}",
     "lint-staged": "lint-staged",
     "prebuild": "npm run clean",
+    "prepare": "npm run build",
     "prepublish": "npm run build",
     "release": "standard-version",
     "release:ci": "conventional-github-releaser -p angular",
